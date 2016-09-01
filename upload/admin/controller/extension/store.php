@@ -544,7 +544,7 @@ class ControllerExtensionStore extends Controller {
 			$json['error'] = $this->language->get('error_permission');
 		}
 		
-		if (!empty(trim($this->request->get['code']))) {
+		if (!$empty(trim($this->request->get['code']))) {
 			$code = $this->request->get['code'];
 		} else {
 			$code = '';
