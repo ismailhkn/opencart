@@ -89,7 +89,7 @@ class ControllerExtensionStore extends Controller {
 		$url .= '&currency=' . $this->config->get('config_currency');
 		$url .= '&version=' . VERSION;
 		
-		$curl = curl_init(HTTP_TEST . 'index.php?route=extension/extension' . $url);
+		$curl = curl_init('index.php?route=extension/extension');
 		
 		curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, 0);
 		curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
@@ -544,7 +544,7 @@ class ControllerExtensionStore extends Controller {
 			$json['error'] = $this->language->get('error_permission');
 		}
 		
-		if (!empty(trim($this->request->get['code']))) {
+		if (!$empty(trim($this->request->get['code']))) {
 			$code = $this->request->get['code'];
 		} else {
 			$code = '';
