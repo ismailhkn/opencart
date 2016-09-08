@@ -27,8 +27,8 @@ $_['column_action']          = 'Action';
 // Entry
 $_['entry_name']             = 'Product Name';
 $_['entry_description']      = 'Description';
-$_['entry_meta_title'] 	     = 'Meta Tag Title';
-$_['entry_meta_keyword'] 	 = 'Meta Tag Keywords';
+$_['entry_meta_title']       = 'Meta Tag Title';
+$_['entry_meta_keyword']     = 'Meta Tag Keywords';
 $_['entry_meta_description'] = 'Meta Tag Description';
 $_['entry_keyword']          = 'SEO URL';
 $_['entry_model']            = 'Model';
@@ -59,6 +59,7 @@ $_['entry_length']           = 'Length';
 $_['entry_width']            = 'Width';
 $_['entry_height']           = 'Height';
 $_['entry_image']            = 'Image';
+$_['entry_additional_image'] = 'Additional Images';
 $_['entry_customer_group']   = 'Customer Group';
 $_['entry_date_start']       = 'Date Start';
 $_['entry_date_end']         = 'Date End';
@@ -75,7 +76,7 @@ $_['entry_category']         = 'Categories';
 $_['entry_filter']           = 'Filters';
 $_['entry_download']         = 'Downloads';
 $_['entry_related']          = 'Related Products';
-$_['entry_tag']          	 = 'Product Tags';
+$_['entry_tag']              = 'Product Tags';
 $_['entry_reward']           = 'Reward Points';
 $_['entry_layout']           = 'Layout Override';
 $_['entry_recurring']        = 'Recurring Profile';
@@ -96,7 +97,7 @@ $_['help_category']          = '(Autocomplete)';
 $_['help_filter']            = '(Autocomplete)';
 $_['help_download']          = '(Autocomplete)';
 $_['help_related']           = '(Autocomplete)';
-$_['help_tag']              = 'Comma separated';
+$_['help_tag']               = 'Comma separated';
 
 // Error
 $_['error_warning']          = 'Warning: Please check the form carefully for errors!';

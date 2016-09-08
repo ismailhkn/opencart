@@ -3,6 +3,7 @@
 $_['heading_title']              = 'Orders';
 
 // Text
+$_['text_success']               = 'Success: You have modified orders!';
 $_['text_list']                  = 'Order List';
 $_['text_add']                   = 'Add Order';
 $_['text_edit']                  = 'Edit Order';
@@ -128,4 +129,4 @@ $_['help_override']              = 'If the customers order is being blocked from
 $_['error_warning']              = 'Warning: Please check the form carefully for errors!';
 $_['error_permission']           = 'Warning: You do not have permission to modify orders!';
 $_['error_action']               = 'Warning: Could not complete this action!';
-$_['error_filetype']			 = 'Invalid file type!';
+$_['error_filetype']             = 'Invalid file type!';

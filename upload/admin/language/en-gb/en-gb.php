@@ -67,6 +67,8 @@ $_['button_special_add']            = 'Add Special';
 $_['button_image_add']              = 'Add Image';
 $_['button_geo_zone_add']           = 'Add Geo Zone';
 $_['button_history_add']            = 'Add History';
+$_['button_translation']            = 'Load Default Translation';
+$_['button_translation_add']        = 'Add Translation';
 $_['button_transaction_add']        = 'Add Transaction';
 $_['button_route_add']              = 'Add Route';
 $_['button_rule_add']               = 'Add Rule';
@@ -96,6 +98,7 @@ $_['button_currency']               = 'Refresh Currency Values';
 $_['button_apply']                  = 'Apply';
 $_['button_category_add']           = 'Add Category';
 $_['button_order']                  = 'View Order';
+$_['button_order_recurring']        = 'View Recurring Order';
 
 // Tab
 $_['tab_address']                   = 'Address';
@@ -146,3 +149,4 @@ $_['error_upload_6']                = 'Warning: Missing a temporary folder!';
 $_['error_upload_7']                = 'Warning: Failed to write file to disk!';
 $_['error_upload_8']                = 'Warning: File upload stopped by extension!';
 $_['error_upload_999']              = 'Warning: No error code available!';
+$_['error_curl']                    = 'CURL: Error Code(%s): %s';
