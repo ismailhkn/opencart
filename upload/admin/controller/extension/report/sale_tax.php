@@ -1,7 +1,7 @@
 <?php
-class ControllerReportSaleTax extends Controller {
+class ControllerExtensionReportSaleTax extends Controller {
 	public function index() {
-		$this->load->language('report/sale_tax');
+		$this->load->language('extension/report/sale_tax');
 
 		$this->document->setTitle($this->language->get('heading_title'));
 
@@ -66,7 +66,7 @@ class ControllerReportSaleTax extends Controller {
 
 		$data['breadcrumbs'][] = array(
 			'text' => $this->language->get('heading_title'),
-			'href' => $this->url->link('report/sale_tax', 'token=' . $this->session->data['token'] . $url, true)
+			'href' => $this->url->link('extension/report/sale_tax', 'token=' . $this->session->data['token'] . $url, true)
 		);
 
 		$this->load->model('report/sale');
@@ -183,6 +183,6 @@ class ControllerReportSaleTax extends Controller {
 		$data['column_left'] = $this->load->controller('common/column_left');
 		$data['footer'] = $this->load->controller('common/footer');
 
-		$this->response->setOutput($this->load->view('report/sale_tax', $data));
+		$this->response->setOutput($this->load->view('extension/report/sale_tax', $data));
 	}
 }
