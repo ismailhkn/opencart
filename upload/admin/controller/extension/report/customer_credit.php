@@ -1,7 +1,7 @@
 <?php
-class ControllerReportCustomerCredit extends Controller {
+class ControllerExtensionReportCustomerCredit extends Controller {
 	public function index() {
-		$this->load->language('report/customer_credit');
+		$this->load->language('extension/report/customer_credit');
 
 		$this->document->setTitle($this->language->get('heading_title'));
 
@@ -56,7 +56,7 @@ class ControllerReportCustomerCredit extends Controller {
 
 		$data['breadcrumbs'][] = array(
 			'text' => $this->language->get('heading_title'),
-			'href' => $this->url->link('report/customer_credit', 'token=' . $this->session->data['token'] . $url, true)
+			'href' => $this->url->link('extension/report/customer_credit', 'token=' . $this->session->data['token'] . $url, true)
 		);
 
 		$this->load->model('report/customer');
@@ -126,7 +126,7 @@ class ControllerReportCustomerCredit extends Controller {
 		$pagination->total = $customer_total;
 		$pagination->page = $page;
 		$pagination->limit = $this->config->get('config_limit_admin');
-		$pagination->url = $this->url->link('report/customer_credit', 'token=' . $this->session->data['token'] . $url . '&page={page}', true);
+		$pagination->url = $this->url->link('extension/report/customer_credit', 'token=' . $this->session->data['token'] . $url . '&page={page}', true);
 
 		$data['pagination'] = $pagination->render();
 
@@ -140,6 +140,6 @@ class ControllerReportCustomerCredit extends Controller {
 		$data['column_left'] = $this->load->controller('common/column_left');
 		$data['footer'] = $this->load->controller('common/footer');
 
-		$this->response->setOutput($this->load->view('report/customer_credit', $data));
+		$this->response->setOutput($this->load->view('extension/report/customer_credit', $data));
 	}
 }
