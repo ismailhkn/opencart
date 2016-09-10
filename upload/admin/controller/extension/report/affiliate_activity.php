@@ -1,7 +1,7 @@
 <?php
-class ControllerReportAffiliateActivity extends Controller {
+class ControllerExtensionReportAffiliateActivity extends Controller {
 	public function index() {
-		$this->load->language('report/affiliate_activity');
+		$this->load->language('extension/report/affiliate_activity');
 
 		$this->document->setTitle($this->language->get('heading_title'));
 
@@ -65,7 +65,7 @@ class ControllerReportAffiliateActivity extends Controller {
 		);
 
 		$data['breadcrumbs'][] = array(
-			'href' => $this->url->link('report/affiliate_activity', 'token=' . $this->session->data['token'] . $url, true),
+			'href' => $this->url->link('extension/report/affiliate_activity', 'token=' . $this->session->data['token'] . $url, true),
 			'text' => $this->language->get('heading_title')
 		);
 
@@ -137,7 +137,7 @@ class ControllerReportAffiliateActivity extends Controller {
 		$pagination->total = $activity_total;
 		$pagination->page = $page;
 		$pagination->limit = $this->config->get('config_limit_admin');
-		$pagination->url = $this->url->link('report/affiliate_activity', 'token=' . $this->session->data['token'] . $url . '&page={page}', true);
+		$pagination->url = $this->url->link('extension/report/affiliate_activity', 'token=' . $this->session->data['token'] . $url . '&page={page}', true);
 
 		$data['pagination'] = $pagination->render();
 
@@ -152,6 +152,6 @@ class ControllerReportAffiliateActivity extends Controller {
 		$data['column_left'] = $this->load->controller('common/column_left');
 		$data['footer'] = $this->load->controller('common/footer');
 
-		$this->response->setOutput($this->load->view('report/affiliate_activity', $data));
+		$this->response->setOutput($this->load->view('extension/report/affiliate_activity', $data));
 	}
 }
