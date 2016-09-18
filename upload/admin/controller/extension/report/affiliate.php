@@ -1,5 +1,5 @@
 <?php
-class ControllerReportAffiliate extends Controller {
+class ControllerExtensionReportAffiliate extends Controller {
 	public function index() {
 		$this->load->language('report/affiliate');
 
@@ -46,7 +46,7 @@ class ControllerReportAffiliate extends Controller {
 
 		$data['breadcrumbs'][] = array(
 			'text' => $this->language->get('heading_title'),
-			'href' => $this->url->link('report/affiliate', 'token=' . $this->session->data['token'] . $url, true)
+			'href' => $this->url->link('extension/report/affiliate', 'token=' . $this->session->data['token'] . $url, true)
 		);
 
 		$this->load->model('report/affiliate');
@@ -125,6 +125,6 @@ class ControllerReportAffiliate extends Controller {
 		$data['column_left'] = $this->load->controller('common/column_left');
 		$data['footer'] = $this->load->controller('common/footer');
 
-		$this->response->setOutput($this->load->view('report/affiliate', $data));
+		$this->response->setOutput($this->load->view('extension/report/affiliate', $data));
 	}
 }
